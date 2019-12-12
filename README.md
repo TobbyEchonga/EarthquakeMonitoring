@@ -1,4 +1,4 @@
-# EarthquakeMonitoring
+# Earthquake Monitoring
 This is a earthquake monitoring web application I worked on to display major earthquakes within a specific period of time
 
 The information is got from a US base Earthquake Api called https://earthquake.usgs.gov/
