@@ -1,0 +1,75 @@
+﻿<%@ Master Language="VB" CodeFile="admin.master.vb" Inherits="admin" %>
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="Images/favicon.ico">
+
+    <title>Earthquake ALert</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+
+
+            <div class="container body-content">
+               <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+                <hr/>
+                <footer>
+                <div class="container">
+                    <div class="col-md-3">
+                        <p>
+                            <i class="fa fa-facebook-official" style="color: blue;"></i>
+                            <asp:HyperLink ID="facebook" runat="server" NavigateUrl="https://www.facebook.com/earthquakeAlert/">Facebook</asp:HyperLink>
+                        </p>
+                        <p>
+                            <i class="fa fa-twitter" style="color: deepskyblue;"></i>
+                            <asp:HyperLink ID="twitter" runat="server" NavigateUrl="https://www.twitter.com/earthquakeAlert/">Twitter</asp:HyperLink>
+                        </p>
+                        <p>
+                            <i class="fa fa-youtube" style="color: red;"></i>
+                            <asp:HyperLink ID="youtube" runat="server" NavigateUrl="https://www.youtube.com/earthquakeAlert/">Youtube</asp:HyperLink>
+                        </p>
+                        <p>
+                            <i class="fa fa-snapchat" style="color: yellow;"></i>
+                            <asp:HyperLink ID="snapchat" runat="server" NavigateUrl="https://www.snapchat.com/earthquakeAlert/">Snapchat</asp:HyperLink>
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Support Lines</h4>
+                        <address>
+                            Centram Enterprise<br />
+                            Vacoas, Mauritius<br />
+                            <abbr title="Phone">Phone:</abbr>
+                            +230-5983-6653
+                        </address>
+                        <address>
+                            <strong>Support:</strong>   <a href="mailto:Support@example.com">tobby@example.com</a><br />
+                            <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">urvi@example.com</a>
+                        </address>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Mauritius Emergency Lines</h4>
+                        <p><a runat="server" href="~/About.aspx">About Us</a></p>
+                        <p>Police Support Unit(SSU): ​211-0628</p>
+                        <p>Police Helicopter Squadron(PHS): 637-3894</p>                 ​                   
+                    </div>
+                  </div>
+                <p>&copy; <%: DateTime.Now.Year %> - Eathquake ALert!</p>
+            </footer>
+            </div>
+        </div>
+    </form>
+</body>

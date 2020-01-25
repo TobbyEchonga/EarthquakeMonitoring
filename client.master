@@ -1,0 +1,157 @@
+﻿<%@ Master Language="VB" CodeFile="client.master.vb" Inherits="client" %>
+
+<html lang="en">
+<head>
+    <!-- Theme Made By www.w3schools.com - No Copyright -->
+    <title>earthquake Alert</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   
+   <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <style>
+        footer{
+              right: 0;
+              bottom: 0;
+              left: 0;
+        }
+ 
+          p {font-size: 16px;}
+          .margin {margin-bottom: 45px;}
+          .bg-1 { 
+              background-color: #1abc9c; /* Green */
+              color: #ffffff;
+          }
+          .bg-2 { 
+              background-color: #474e5d; /* Dark Blue */
+              color: #ffffff;
+          }
+          .bg-3 { 
+              background-color: #ffffff; /* White */
+              color: #555555;
+          }
+          .bg-4 { 
+              background-color: #2f2f2f; /* Black Gray */
+              color: #fff;
+          }
+          .container-fluid {
+              padding-top: 70px;
+              padding-bottom: 70px;
+          }
+          .navbar {
+              padding-top: 15px;
+              padding-bottom: 15px;
+              border: 0;
+              border-radius: 0;
+              margin-bottom: 0;
+              font-size: 12px;
+              letter-spacing: 5px;
+          }
+          .navbar-nav  li a:hover {
+              color: #1abc9c !important;
+          }
+          </style>
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="~/client1">Earthquake ALert!</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                 <asp:LoginView runat="server" ViewStateMode="Enabled">
+                    <AnonymousTemplate>
+                        <ul>
+                            <li><a runat="server" href="registration.aspx">Register</a></li>
+                            <li><a runat="server" href="login.aspx">Login</a></li>
+                        </ul>
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        <li><a runat="server" href="clientmauris.aspx">Nearby</a></li>
+                        <li><a runat="server" href="clientrecent.aspx">Recent</a></li>
+                        <li><a runat="server" href="clientmonth.aspx">In Last month</a></li>
+                        <li><a runat="server" href="client1.aspx">Log Out</a></li>
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </div>
+        </div>
+    </nav>
+    <br />
+    <br />
+    <div class="container body-content">
+        <div class="row">
+            <form id="frm" runat="server">
+                <br />
+                <div class="col-md-12">
+                    
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </form>          
+        </div>
+    </div>
+        <!-- Footer -->
+        <footer class="bg-4">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <p>
+                                <i class="fa fa-facebook-official" style="color: blue;"></i>
+                                <asp:HyperLink ID="facebook" runat="server" NavigateUrl="https://www.facebook.com/earthquakeAlert/">Facebook</asp:HyperLink>
+                            </p>
+                            <p>
+                                <i class="fa fa-twitter" style="color: deepskyblue;"></i>
+                                <asp:HyperLink ID="twitter" runat="server" NavigateUrl="https://www.twitter.com/earthquakeAlert/">Twitter</asp:HyperLink>
+                            </p>
+                            <p>
+                                <i class="fa fa-youtube" style="color: red;"></i>
+                                <asp:HyperLink ID="youtube" runat="server" NavigateUrl="https://www.youtube.com/earthquakeAlert/">Youtube</asp:HyperLink>
+                            </p>
+                            <p>
+                                <i class="fa fa-snapchat" style="color: yellow;"></i>
+                                <asp:HyperLink ID="snapchat" runat="server" NavigateUrl="https://www.snapchat.com/earthquakeAlert/">Snapchat</asp:HyperLink>
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <h4>Support Lines</h4>
+                            <address>
+                                Centram Enterprise<br />
+                                Vacoas, Mauritius<br />
+                                <abbr title="Phone">Phone:</abbr>
+                                +230-5983-6653
+                            </address>
+                            <address>
+                                <strong>Support:</strong>   <a href="mailto:Support@example.com">tobby@example.com</a><br />
+                                <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">urvi@example.com</a>
+                            </address>
+                            <br />
+                            <br />
+                            <br />
+                            <p>&copy;  Eathquake ALert!</p>
+                        </div>
+                        <div class="col-md-3">
+                            <h4>Mauritius Emergency Lines</h4>
+                            <p><a runat="server" href="~/About.aspx">About Us</a></p>
+                            <p>Police Support Unit(SSU): ​211-0628</p>
+                            <p>Police Helicopter Squadron(PHS): 637-3894</p>
+                            ​                   
+                        </div>
+                    </div>
+           
+          </footer>
+
+</body>
+</html>
