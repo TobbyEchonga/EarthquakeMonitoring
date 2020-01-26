@@ -14,12 +14,12 @@ $ git clone https://github.com/TobbyEchonga/EarthquakeMonitoring.git
 
 * Upload the file
 ```
-Unzip the file into the folder to where visual studio projects are
+Unzip to the folder to where visual studio projects are
 ```
 
 * Edit directory
 ```
-Edit the directory to the database inorder to locate your file
+Edit the location to the db inorder to locate your file
 ```
 
 ## Contributing
