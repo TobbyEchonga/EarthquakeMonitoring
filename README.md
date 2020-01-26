@@ -35,4 +35,8 @@ Javascript, HTML and CSS were used
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
+## Acknowledgments
+
+* [Aspsnippets](https://www.aspsnippets.com/Articles/ASPNet-Google-Maps-V3-with-Multiple-Markers-Database-Example.aspx) - The web framework used
+* Stakeoverflow 
 
