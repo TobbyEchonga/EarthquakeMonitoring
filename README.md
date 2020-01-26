@@ -30,7 +30,8 @@ Please make sure to update tests as appropriate.
 ## Languages and frameworks
 Javascript, HTML and CSS were used
 
-### License
+
+## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
