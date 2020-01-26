@@ -7,17 +7,17 @@ Install visual studio version 2015 and above
 ```
 
 ## Installing 
-Clone the repository
+* Clone the repository
 ```
 $ git clone https://github.com/TobbyEchonga/EarthquakeMonitoring.git
 ```
 
-Upload
+* Upload the file
 ```
-Unzip the file into the folder where visual studio projects are
+Unzip the file into the folder to where visual studio projects are
 ```
 
-Edit
+* Edit directory
 ```
 Edit the directory to the database inorder to locate your file
 ```
