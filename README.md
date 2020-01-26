@@ -1,11 +1,37 @@
 # Earthquake Monitoring
-This is a earthquake monitoring web application I worked on to display major earthquakes within a specific period of time
+This is a earthquake monitoring web application that uploads earthquake data from  https://earthquake.usgs.gov/ and stores it locally where you can view on a map
 
-The information is got from a US base Earthquake Api called https://earthquake.usgs.gov/
-Its extracted and stored locally on the PC 
-Then using the various maps that is recent earthquakes or over period of a month
-You can view the various earthqukaes that occured in during those periods of time 
+##Prerequities
+```
+Install visual studio version 2015 and above
+```
 
-The whole application was developed in Visual studio using vb, html, css and javascript.
+##Installing 
+Clone the repository
+```
+$ git clone https://github.com/TobbyEchonga/EarthquakeMonitoring.git
+```
 
-All the icons are from the google link.
+Upload
+```
+Unzip the file into the folder where visual studio projects are
+```
+
+Edit
+```
+Edit the directory to the database inorder to locate your file
+```
+
+##Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+##Languages and frameworks
+Javascript, HTML and CSS were used
+
+###License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+
