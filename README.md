@@ -38,5 +38,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 * [Aspsnippets](https://www.aspsnippets.com/Articles/ASPNet-Google-Maps-V3-with-Multiple-Markers-Database-Example.aspx) - The web framework used for the project 
-* Stackoveraflow
+* Stackoverflow
 
