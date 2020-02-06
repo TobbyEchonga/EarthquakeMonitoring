@@ -4,6 +4,7 @@ This is a earthquake monitoring web application that uploads earthquake data fro
 ## Prerequities
 ```
 Install visual studio version 2015 and above
+Get a google map API inorder to gain access to google maps at [Google API](https://developers.google.com/maps/documentation/embed/get-api-key)
 ```
 
 ## Installing 
