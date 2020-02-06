@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="VB" MasterPageFile="~/client.master" AutoEventWireup="false" CodeFile="clientmauris.aspx.vb" Inherits="clientmauris" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.11&key=AIzaSyAVEK0lAmZr7rNgyRtj0KhRFwcCgMt9HtE&sensor=false" type="text/javascript"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.11&key=API_KEY&sensor=false" type="text/javascript"></script>
     <script type="text/javascript">
     var markers = [
     <asp:Repeater ID="rptMarkers" runat="server">
