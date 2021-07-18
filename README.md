@@ -45,3 +45,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * [Aspsnippets](https://www.aspsnippets.com/Articles/ASPNet-Google-Maps-V3-with-Multiple-Markers-Database-Example.aspx) - The web framework used for the project 
 * Stackoverflow
 
+
+
+![alt text](https://img.shields.io/badge/Made%20by-Tobby%20Echonga-orange)
